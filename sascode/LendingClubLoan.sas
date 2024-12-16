@@ -36,9 +36,9 @@ ods graphics on;
 *****************************************************;
 **  assign librefs and identify the format library **;
 *****************************************************;
-libname Lend '/workspaces/myfolder/ViyaWBWorkshopHandsOn/sasdata';
+libname Lend '/workspaces/myfolder/WorkbenchWorkshop/sasdata';
 run;
-libname LendFMT '/workspaces/myfolder/ViyaWBWorkshopHandsOn/formats';
+libname LendFMT '/workspaces/myfolder/WorkbenchWorkshop/formats';
 run;
 options FMTSEARCH=(LendFMT);
 
@@ -52,7 +52,7 @@ options FMTSEARCH=(LendFMT);
 ********************************************************************************;
 %let WBDataLib  = Lend;                * libref for workbench data             *;
 %let inputData  = LCLoanData;          * input table                           *;
-%let inputFile  = %str('/workspaces/myfolder/ViyaWBWorkshopHandsOn/inputData/lendingClubLoanData.csv');
+%let inputFile  = %str('/workspaces/myfolder/WorkbenchWorkshop/inputData/lendingClubLoanData.csv');
 
 
 ********************************************************************************;
@@ -464,7 +464,7 @@ title;
 ** RANDOM FOREST: Save the Analytic Store                                 **;
 ****************************************************************************;
 proc astore;
-    download rstore=forestAstore store="/workspaces/myfolder/ViyaWBWorkshopHandsOn/astores/WB_forest.sasast";
+    download rstore=forestAstore store="/workspaces/myfolder/WorkbenchWorkshop/astores/WB_forest.sasast";
 run;
 
 
@@ -490,7 +490,7 @@ title;
 ** GBOOST: Save the Analytic Store                                        **;
 ****************************************************************************;
 proc astore;
-    download rstore=gboostAstore store="/workspaces/myfolder/ViyaWBWorkshopHandsOn/astores/WB_gboost.sasast";
+    download rstore=gboostAstore store="/workspaces/myfolder/WorkbenchWorkshop/astores/WB_gboost.sasast";
 run;
 
 
