@@ -1,5 +1,5 @@
 # Workbench Workshop
-2024 Workbench HandsOn Workshop using banking data set to introduce users to Workbench and demonstrate the integration of Python and SAS on SAS products.
+2024 Workbench Hands-on Workshop using a banking dataset to introduce users to Workbench and demonstrate the integration of Python and SAS on SAS products.
 
 This workshop:
 - 
